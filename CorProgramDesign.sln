@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorProgramDesign", "CorProgramDesign\CorProgramDesign.csproj", "{9C23C44B-651D-4148-8459-6708D6F4B375}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorProgramDesgin.Business", "CorProgramDesgin.Business\CorProgramDesgin.Business.csproj", "{15FB10AC-70B6-4790-8547-24C89DF1AE6E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorProgramDesign.Business", "CorProgramDesgin.Business\CorProgramDesign.Business.csproj", "{15FB10AC-70B6-4790-8547-24C89DF1AE6E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorProgramDesign.Data", "CorProgramDesign.Data\CorProgramDesign.Data.csproj", "{A23FBC27-C484-4417-A0A0-6AAB60E6B388}"
 EndProject
