@@ -1,0 +1,27 @@
+﻿<!-- Main Menu Bar -------------------------------- -->
+<div data-ng-controller="menuBarCtrl">
+    <div class="row">
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li data-ng-class="{ active: isActive('/Program')}" data-match-route="/Program"><a href="#!/Program">Program</a></li>
+                    <li data-ng-class="{ active: isActive('/History')}" data-match-route="/History"><a href="#!/History">History</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+
+<div data-ng-view=""></div>
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/Startup")
+    @Scripts.Render("~/Scripts/App/Controllers")
+    @Scripts.Render("~/Scripts/App/Dialogs")
+    @Scripts.Render("~/Scripts/App/Directives")
+    @Scripts.Render("~/Scripts/App/Filters")
+    @Scripts.Render("~/Scripts/App/Services")
+}

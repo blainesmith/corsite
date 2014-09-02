@@ -1,0 +1,62 @@
+﻿<div class="modal" center-modal>
+    <div class="modal-body">
+        <div ng-class="{
+            'dialog-alert-success': model.icon == 0, 
+            'dialog-alert-info': model.icon == 1, 
+            'dialog-alert-warning': model.icon == 2, 
+            'dialog-alert-error': model.icon == 3}">
+        </div>
+        <div class="dialog-alert-message">
+            <strong>
+                <b>{{model.boldMessage}}</b>
+            </strong>
+            <p>{{model.standardMessage}}</p>
+        </div>
+        <div class="row">
+            <span ng-show="model.ok.visible" 
+                  class="btn btn-block pull-right" 
+                  ng-class="{
+                    'btn-primary': model.ok.color == 'primary',
+                    'btn-success': model.ok.color == 'success',
+                    'btn-warning': model.ok.color == 'warning',
+                    'btn-danger': model.ok.color == 'danger',
+                    'dialog-alert-one-button-width': model.buttonCount == 1,
+                    'dialog-alert-two-button-width': model.buttonCount > 1
+                }"
+                  ng-click="click('ok');">{{model.ok.text}}</span>
+            <span ng-show="model.delete.visible" 
+                  class="btn btn-block pull-right" 
+                  ng-class="{
+                    'btn-primary': model.delete.color == 'primary',
+                    'btn-success': model.delete.color == 'success',
+                    'btn-warning': model.delete.color == 'warning',
+                    'btn-danger': model.delete.color == 'danger',
+                    'dialog-alert-one-button-width': model.buttonCount == 1,
+                    'dialog-alert-two-button-width': model.buttonCount > 1
+                }"
+                  ng-click="click('delete')">Delete</span>
+            <span ng-show="model.replace.visible" 
+                  class="btn btn-blockpull-right" 
+                  ng-class="{
+                    'btn-primary': model.replace.color == 'primary',
+                    'btn-success': model.replace.color == 'success',
+                    'btn-warning': model.replace.color == 'warning',
+                    'btn-danger': model.replace.color == 'danger',
+                    'dialog-alert-one-button-width': model.buttonCount == 1,
+                    'dialog-alert-two-button-width': model.buttonCount > 1
+                }"
+                  ng-click="click('replace')">Replace</span>
+            <span ng-show="model.cancel.visible" 
+                  class="btn btn-block" 
+                  ng-class="{
+                    'btn-primary': model.cancel.color == 'primary',
+                    'btn-success': model.cancel.color == 'success',
+                    'btn-warning': model.cancel.color == 'warning',
+                    'btn-danger': model.cancel.color == 'danger',
+                    'dialog-alert-one-button-width': model.buttonCount == 1,
+                    'dialog-alert-two-button-width': model.buttonCount > 1
+                }"
+                  ng-click="click('cancel');">Cancel</span>
+        </div>
+    </div>
+</div>
